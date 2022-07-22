@@ -1,6 +1,11 @@
 import React from 'react';
+import {IAirport} from "../models/models";
 
-const AirportCard: React.FC = () => {
+type Props = {
+    airport: IAirport,
+}
+
+const AirportCard: React.FC = ({ airport }: Props) => {
     return (
         <div>
             Card
